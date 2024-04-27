@@ -39,11 +39,11 @@ for (let i = 0; i < hiddenElementBrends.length; i++) {
     hiddenElementBrends[i].classList.toggle('swiper-slide--show')
       if (buttonOpenBrends.textContent === 'Показать все') {
         buttonOpenBrends.textContent = 'Скрыть'
-        buttonOpenBrends.style.backgroundImage = 'url(../img/main/arrow-blue-top.svg)'
+        buttonOpenBrends.style.backgroundImage = 'url(./img/main/arrow-blue-top.svg)'
         console.log('sss')
       } else {
         buttonOpenBrends.textContent = 'Показать все'
-        buttonOpenBrends.style.backgroundImage = 'url(../img/main/arrow-blue-bottom.svg)'
+        buttonOpenBrends.style.backgroundImage = 'url(./img/main/arrow-blue-bottom.svg)'
       }
    });
 }
@@ -60,9 +60,9 @@ for (let i = 0; i < hiddenElementTechnique.length; i++) {
 buttonOpenTechnique.addEventListener('click', function () {
   if (buttonOpenTechnique.textContent === 'Показать все') {
     buttonOpenTechnique.textContent = 'Скрыть'
-    buttonOpenTechnique.style.backgroundImage = 'url(../img/main/arrow-blue-top.svg)'
+    buttonOpenTechnique.style.backgroundImage = 'url(./img/main/arrow-blue-top.svg)'
   } else {
     buttonOpenTechnique.textContent = 'Показать все'
-    buttonOpenTechnique.style.backgroundImage = 'url(../img/main/arrow-blue-bottom.svg)'
+    buttonOpenTechnique.style.backgroundImage = 'url(./img/main/arrow-blue-bottom.svg)'
   }
  });
