@@ -1,0 +1,162 @@
+.header {
+  display: flex;
+  align-items: center;
+  height: 90px;
+  padding: 0 15px;
+  background: $whiteBg;
+  @media (min-width: 767px) {
+    &{
+      justify-content: flex-end;
+      position: relative;
+    }
+    .icon-burger {
+      display: flex;
+      align-items: center;
+      margin-right: 16px;
+    }
+    .icon-burger img {
+      padding-right: 20px;
+    }
+    .icon-burger:after {
+      content: "";
+      width: 2px;
+      height: 32px;
+      border-radius: 1px;
+      background: $border;
+    }
+    .icon-call{
+      display: inline-block;
+      margin-right: 16px;
+    }
+    .icon-chat {
+      display: inline-block;
+      margin-right: 16px;
+    }
+    .icon-profile {
+      display: flex;
+      align-items: center;
+      margin-right: 16px;
+    }
+    .icon-profile img {
+      padding-right: 20px;
+    }
+    .icon-profile:after {
+      content: "";
+      width: 2px;
+      height: 32px;
+      border-radius: 1px;
+      background: $border;
+    }
+    .icon-service {
+      margin-right: 16px;
+      img{
+        &:hover{
+          transition: all 0.2s ease-in-out;
+          opacity: 0.5;
+        }
+      }
+    }
+    .icon-status{
+      img{
+        &:hover{
+          transition: all 0.2s ease-in-out;
+          opacity: 0.5;
+        }
+      }
+    }
+    .logo{
+     flex-grow: 1;
+     flex-basis: auto;
+    }
+    .logo:after {
+      display: none;
+    }
+  }
+  @media (min-width: 1366px) {
+    & {
+      position: relative;
+      background-color: $grayBg;
+      height: 80px;
+    }
+    .icon-burger {
+      display: none;
+    }
+    .logo{
+      visibility: hidden;
+    }
+    .icon-call {
+      display: none;
+    }
+    .icon-chat {
+      display: none;
+    }
+    .icon-profile {
+      display: none;
+    }
+    .icon-service {
+      display: flex;
+      margin-top: 40px;
+      align-items: center;
+    }
+    .icon-service::before {
+      content: "Оставить заявку";
+      color: $buttonText;
+      font-size: 16px;
+      font-weight: 500;
+      padding-right: 8px;
+      line-height: 150%;
+    }
+    .icon-status {
+      display: flex;
+      align-items: center;
+      margin-top: 40px;
+    }
+    .icon-status::before {
+      content: "Статус ремонта";
+      color: $buttonText;
+      font-size: 16px;
+      font-weight: 500;
+      padding-right: 8px;
+      line-height: 150%;
+    }
+   }
+}
+.icon-burger {
+  margin-right: 16.73px;
+  display: block;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  margin-right: 20px;
+  img {
+    padding-right: 16px;
+  }
+  &:after{
+    content: "";
+    width: 2px;
+    height: 32px;
+    border-radius: 1px;
+    background: $border;
+  }
+}
+.icon-call {
+  display: none;
+}
+.icon-chat {
+  display: none;
+}
+.icon-profile {
+  display: none;
+}
+.icon-service {
+  margin-right: 16px;
+}
+
+@media (min-width: 2500px) {
+  .header{
+    width: 1440px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,22 @@
+$borderBlue: rgb(65, 246, 215);
+$borderMenu: rgb(184, 255, 236);
+$whiteBg: rgb(255, 255, 255);
+$linearGrad: linear-gradient(rgb(248, 248, 248),rgb(255, 255, 255));
+$headerColor: rgb(126, 126, 130);
+$grayBg: rgb(242, 242, 242);
+$border: 1px solid rgb(234, 234, 234);
+$buttonText: rgb(27, 28, 33);
+$bulletColor: rgb(181, 182, 188);
+$formColor: rgb(255, 62, 121);
+$borderInput: #EAEAEA;
+
+@import 'header.scss';
+@import 'main.scss';
+@import 'body.scss';
+@import 'normalize.scss';
+@import 'fonts.scss';
+@import 'aside.scss';
+@import 'sliders.scss';
+@import 'footer.scss';
+
+
